@@ -6,3 +6,19 @@ tmp
 *.iml
 out
 gen
+
+### macOS template
+.DS_Store
+*.DS_Store
+# Thumbnails
+._*
+
+### Node template
+# Bower dependency directory (https://bower.io/)
+bower_components
+bower_components/
+
+# Dependency directories
+node_modules
+node_modules/
+jspm_packages/
