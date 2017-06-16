@@ -1,0 +1,25 @@
+{
+  "name": "terangular",
+  "homepage": "https://github.com/kenvilar/terangular",
+  "description": "A responsive starter angular app featuring Grunt, Bower, NPM, Gulp, C3 Chart, Karma, Jasmine and Protractor",
+  "version": "0.0.1",
+  "keywords": [
+    "AngularJS",
+    "App",
+    "Responsive",
+    "Starter",
+    "terangular"
+  ],
+  "authors": [
+    "Ken Vilar"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
