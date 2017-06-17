@@ -1,5 +1,9 @@
 (function() {
     'use strict';
 
-    angular.module('terangular-app', ['ngRoute', 'ngAnimate']);
+    angular.module('terangular-app', [
+        'ngAnimate',
+        'terangular-route'
+    ]);
+
 }());
