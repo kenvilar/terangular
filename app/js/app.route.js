@@ -2,25 +2,27 @@
     'use strict';
 
     angular
-        .module('terangular-route', ['ngRoute'])
-        .config(['$locationProvider', '$routeProvider', TerangularRoute]);
+        .module('terangular-route', ['ui.router'])
+        .config(['$locationProvider', '$stateProvider', '$urlRouterProvider', TerangularRoute]);
 
-    function TerangularRoute($locationProvider, $routeProvider) {
+    function TerangularRoute($locationProvider, $stateProvider, $urlRouterProvider) {
         $locationProvider.hashPrefix('!');
-        $routeProvider
-            .when('/', {
+
+        $stateProvider
+            .state('home', {
+                url: '/',
                 templateUrl: "templates/home/home.html",
                 controller: "HomeController",
                 controllerAs: "vm"
             })
-            .when('/about', {
+            .state('about', {
+                url: '/about',
                 templateUrl: "templates/about/about.html",
                 controller: "AboutController",
                 controllerAs: "vm"
-            })
-            .otherwise({
-                redirectTo: "/"
             });
+
+        $urlRouterProvider.otherwise('/'); //needed by $stateProvider
     }
 
 }());
