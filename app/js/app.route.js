@@ -8,13 +8,15 @@
     function TerangularRoute($locationProvider, $routeProvider) {
         $locationProvider.hashPrefix('!');
         $routeProvider
-            .when("/", {
-                //language=HTML
-                template: "<h1>Homepage</h1>"
+            .when('/', {
+                templateUrl: "templates/home/home.html",
+                controller: "HomeController",
+                controllerAs: "vm"
             })
-            .when("/about", {
-                //language=HTML
-                template: "<h1>About Us</h1>"
+            .when('/about', {
+                templateUrl: "templates/about/about.html",
+                controller: "AboutController",
+                controllerAs: "vm"
             })
             .otherwise({
                 redirectTo: "/"
