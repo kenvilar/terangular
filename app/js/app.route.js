@@ -6,7 +6,9 @@
         .config(['$locationProvider', '$stateProvider', '$urlRouterProvider', TerangularRoute]);
 
     function TerangularRoute($locationProvider, $stateProvider, $urlRouterProvider) {
-        $locationProvider.hashPrefix('!');
+        $locationProvider
+            .html5Mode(true)
+            .hashPrefix('!');
 
         $stateProvider
             .state('home', {
