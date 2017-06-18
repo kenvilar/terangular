@@ -1,9 +1,12 @@
 (function() {
     'use strict';
 
-    angular.module('terangular-app', [
+    angular
+        .module('terangular-app', [
         'ngAnimate',
-        'terangular-route'
+        'terangular-route',
+        'terangular-controller',
+        'terangular-directive'
     ]);
 
 }());
