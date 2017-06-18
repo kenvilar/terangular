@@ -1,0 +1,8 @@
+<h1>{{ vm.test }}</h1>
+<ul>
+    <li ng-repeat="student in vm.students">
+        <hello-world name="student.name" age="15" change-name="vm.changeName(student.name)">
+            (PREMIUM)
+        </hello-world>
+    </li>
+</ul>
