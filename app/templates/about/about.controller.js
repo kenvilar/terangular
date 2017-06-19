@@ -8,6 +8,6 @@
     function AboutController() {
         var vm = this;
 
-        vm.test = "About Us..."
+        vm.test = "About Us...";
     }
 }());

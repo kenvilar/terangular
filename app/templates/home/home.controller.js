@@ -19,6 +19,6 @@
             {'name': 'Jill', 'age': 21},
             {'name': 'Romeo', 'age': 22},
             {'name': 'Juliet', 'age': 23}
-        ]
+        ];
     }
 }());
