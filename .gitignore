@@ -1,18 +1,3 @@
-!.gitkeep
-tmp
-
-### IntelliJ project files
-.idea
-*.iml
-out
-gen
-
-### macOS template
-.DS_Store
-*.DS_Store
-# Thumbnails
-._*
-
 ### Node template
 # Bower dependency directory (https://bower.io/)
 bower_components
@@ -22,3 +7,25 @@ bower_components/
 node_modules
 node_modules/
 jspm_packages/
+
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+
+### User template project files
+!.gitkeep
+tmp
+
+
+### IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+
+### macOS template
+.DS_Store
+*.DS_Store
+# Thumbnails
+._*
