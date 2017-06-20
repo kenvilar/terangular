@@ -4,8 +4,13 @@
 </div>
 <ul>
     <li ng-repeat="student in vm.students">
-        <student-list name="student.name" age="15" change-name="vm.changeName(student.name)">
+        <student-list name="student.name" age="15" call-name="vm.callName(student.name)">
             (PREMIUM)
         </student-list>
     </li>
 </ul>
+
+<span ng-repeat="myClass in vm.availableClasses">
+    <available-classes name="myClass.name" call-name="vm.callName(myClass.name)"
+                       rating="myClass.rating | ratings"></available-classes>
+<br></span>
