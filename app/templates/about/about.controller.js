@@ -1,13 +1,18 @@
-(function() {
+(function () {
     'use strict';
 
     angular
         .module('terangular-app')   //you shouldn't use [] if you already using an existing module name, ie. in (app.js)
-        .controller('AboutController', [AboutController]);
+        .controller('AboutController', ['aboutSrvc', AboutController])
+        .service('aboutSrvc', aboutSrvc);
 
-    function AboutController() {
+    function AboutController(aboutSrvc) {
         var vm = this;
 
-        vm.test = "About Us...";
+        vm.test = aboutSrvc.test;
+    }
+
+    function aboutSrvc() {
+        return {test: "About Us..."};
     }
 }());
