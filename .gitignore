@@ -29,3 +29,9 @@ gen
 *.DS_Store
 # Thumbnails
 ._*
+
+### Eclipse template
+.settings/
+
+# Eclipse Core
+.project
