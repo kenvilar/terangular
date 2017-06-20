@@ -3,9 +3,9 @@
 
     angular
         .module('terangular-app')
-        .controller('HomeController', [HomeController]);
+        .controller('HomeController', ['ratingsFilter', HomeController]);
 
-    function HomeController() {
+    function HomeController(ratingsFilter) {
         var vm = this;
 
         vm.test = "Homepage...";
@@ -27,5 +27,7 @@
             {'name': 'History', rating: 4},
             {'name': 'Biology', rating: 1}
         ];
+
+        vm.myRating = ratingsFilter(4);
     }
 }());
