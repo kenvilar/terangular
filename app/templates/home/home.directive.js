@@ -3,7 +3,8 @@
 
     angular
         .module('terangular-directive', [])
-        .directive('studentList', StudentList);
+        .directive('studentList', StudentList)
+        .directive('availableClasses', AvailableClasses);
 
     function StudentList() {
         return {
@@ -14,13 +15,26 @@
                 name: "=",
                 // for example: student.age = 15; age="student.age" --> student.age
                 age: '@',
-                // (function) for example: vm.changeName = function(name){}; change-name="vm.changeName(student.name)"
-                changeName: "&"
+                // (function) for example: vm.callName = function(name){}; change-name="vm.changeName(student.name)"
+                callName: "&"
             },
-            template: 'Hello <span ng-bind="name"></span>! Age=<span ng-bind="age"></span>. <a href="" ng-click="changeName()">Call my name!</a><span ng-transclude></span>',
+            template: 'Hello <span ng-bind="name"></span>! Age=<span ng-bind="age"></span>. <a href="" ng-click="callName()">Call my name!</a><span ng-transclude></span>',
             controller: function () {
 
             }
+        };
+    }
+
+    function AvailableClasses() {
+        return {
+            restrict: 'AE',
+            transclude: true,
+            scope: {
+                name: '=',
+                rating: '=',
+                callName: '&'
+            },
+            template: '<button ng-click="callName()">Register</button> <span ng-bind="name"></span> <span ng-bind="rating"></span>'
         };
     }
 }());
