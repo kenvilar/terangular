@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
 
     angular
@@ -17,9 +17,8 @@
                 // (function) for example: vm.changeName = function(name){}; change-name="vm.changeName(student.name)"
                 changeName: "&"
             },
-            template: 'Hello {{ name }}, {{ age }} <a href="" ng-click="changeName()">Call my name!</a>' +
-                    '<span ng-transclude></span>',
-            controller: function() {
+            template: 'Hello {{ name }}, {{ age }} <a href="" ng-click="changeName()">Call my name!</a><span ng-transclude></span>',
+            controller: function () {
 
             }
         };
