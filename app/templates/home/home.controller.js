@@ -10,7 +10,7 @@
 
         vm.test = "Homepage...";
 
-        vm.changeName = function (name) {
+        vm.callName = function (name) {
             alert(name + " was called!");
         };
 
@@ -19,6 +19,13 @@
             {'name': 'Jill', 'age': 21},
             {'name': 'Romeo', 'age': 22},
             {'name': 'Juliet', 'age': 23}
+        ];
+
+        vm.availableClasses = [
+            {'name': 'Chemistry', rating: 2},
+            {'name': 'Physics', rating: 5},
+            {'name': 'History', rating: 4},
+            {'name': 'Biology', rating: 1}
         ];
     }
 }());
