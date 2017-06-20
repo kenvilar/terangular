@@ -1,4 +1,4 @@
-(function() {
+(function () {
     'use strict';
 
     angular
@@ -10,7 +10,7 @@
 
         var album = {};
 
-        album.getArtist = function() {
+        album.getArtist = function () {
             return artist;
         };
 
