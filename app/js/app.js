@@ -6,7 +6,8 @@
             'ngAnimate',
             'terangular-route',
             'terangular-controller',
-            'terangular-directive'
+            'terangular-directive',
+            'ngResource'
         ]);
 
 }());
